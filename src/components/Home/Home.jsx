@@ -6,14 +6,14 @@ import SearchExersices from '../SearchExersices/SearchExersices'
 import Exercies from '../Exercies/Exercies'
 export default function Home() {
 
-  const [bodyPart, setbodyPart] = useState('all')
+  const [bodyPart, setBodyPart] = useState('all')
   const [exercises, setExercises] = useState([])
 
   return (
     <Box>
       <HeroBanner/>
-      <SearchExersices setExercises={setExercises} bodyPart={bodyPart}  setbodyPart={setbodyPart}/>
-      <Exercies setExercises={setExercises} bodyPart={bodyPart}  setbodyPart={setbodyPart}/>
+      <SearchExersices setExercises={setExercises} bodyPart={bodyPart}  setBodyPart={setBodyPart}/>
+      <Exercies setExercises={setExercises} exercises={exercises} bodyPart={bodyPart}/>
     </Box>
   )
 }
