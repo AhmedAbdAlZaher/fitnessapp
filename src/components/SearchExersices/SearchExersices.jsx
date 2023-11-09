@@ -23,7 +23,7 @@ export default function SearchExersices( {setExercises , bodyPart , setBodyPart}
 
   const handleSearch = async () => {
     if (search) {
-      const exercisesData = await fetchData('https://exercisedb.p.rapidapi.com/exercises', exerciseOptions);
+      const exercisesData = await fetchData('https://exercisedb.p.rapidapi.com/exercises?limit=900', exerciseOptions);
       const searchedExercises = exercisesData.filter(
         (exercises) => exercises.name.toLocaleLowerCase().includes(search)
           || exercises.target.toLocaleLowerCase().includes(search)
