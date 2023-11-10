@@ -141,4 +141,16 @@ body {
   .exercise-card {
     width: 280px;
   }
-}
+} 
+
+.react-horizontal-scrolling-menu--wrapper {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  }
+  .react-horizontal-scrolling-menu--inner-wrapper {
+  width:100%;
+  }
+  .react-horizontal-scrolling-menu--scroll-container {
+  width: calc(100vw - 104px);
+  }
