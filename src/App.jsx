@@ -1,6 +1,6 @@
 import React from 'react'
 import { Box } from '@mui/material'
-import {  RouterProvider, createBrowserRouter } from 'react-router-dom'
+import {  RouterProvider, createBrowserRouter, createHashRouter } from 'react-router-dom'
 import "./App.css"
 
 import ExerciesDetails from "./components/ExerciesDetails/ExerciesDetails"
@@ -10,7 +10,7 @@ import Home from './components/Home/Home'
 
 export default function App() {
   
-  const routers = createBrowserRouter([
+  const routers = createHashRouter([
 {
   path: "/", element: <Layout></Layout>, children:[
     { index: true, element: <Home></Home> },
