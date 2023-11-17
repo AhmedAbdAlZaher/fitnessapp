@@ -2,6 +2,11 @@ import { Box, Button, Typography , button } from '@mui/material'
 import React from 'react'
 import HeroBannerImage from '../../assets/images/banner.png'
 export default function HeroBanner() {
+
+function exploreExercises(){
+  window.scrollTo(0, 1200);
+}
+
   return (
     <Box sx={{ mt: { lg: '212px', xs: '70px' }, ml: { sm: '50px' } }} position={'relative'} p={'20px'}>
       <Typography
@@ -21,7 +26,7 @@ export default function HeroBanner() {
       <Typography fontFamily={'22px'} lineHeight={'35px'} mb={4}>
         Cheak out the most effective exercise
       </Typography>
-      <Button variant="contained" href='#excercises' color="error" sx={{backgroundColor:"#ff2625" , padding:'10px'}} >Explore Exercises </Button>
+      <Button onClick={exploreExercises} variant="contained"  color="error" sx={{backgroundColor:"#ff2625" , padding:'10px'}} >Explore Exercises </Button>
       <Typography
       fontWeight={600}
       color={"#ff2625"}
